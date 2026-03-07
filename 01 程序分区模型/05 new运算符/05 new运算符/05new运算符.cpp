@@ -52,7 +52,7 @@ using namespace std;
 		delete[] arr;
 
 		system("pause");
-
+		
 		return 0;
 	}
 
