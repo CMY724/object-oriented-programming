@@ -3,12 +3,12 @@
 using namespace std;
 
 
-	//newµÄ»ù±¾Óï·¨£ºnew+Êı¾İÀàĞÍ
-	//new·µ»ØµÄÊÇ¸ÃÊı¾İÀàĞÍµÄÖ¸Õë
+	//newçš„åŸºæœ¬è¯­æ³•ï¼šnew+æ•°æ®ç±»å‹
+	//newè¿”å›çš„æ˜¯è¯¥æ•°æ®ç±»å‹çš„æŒ‡é’ˆ
 	//int * p=new int (10);
 	//double* p = new double(xxx);
 
-//delete p;¼´¿ÉÊÍ·Å¶ÑÇøÊı¾İ
+//delete p;å³å¯é‡Šæ”¾å †åŒºæ•°æ®
 
 	int* func()
 	{
@@ -23,10 +23,10 @@ using namespace std;
 		cout << *p << endl;
 		cout << *p << endl;
 
-		//ÀûÓÃdeleteÊÍ·Å¶ÑÇøÊı¾İ
+		//åˆ©ç”¨deleteé‡Šæ”¾å †åŒºæ•°æ®
 		delete p;
 
-		/*cout << *p << endl;*/ //±¨´í£¬ÊÍ·ÅµÄ¿Õ¼ä²»¿É·ÃÎÊ
+		/*cout << *p << endl;*/ //æŠ¥é”™ï¼Œé‡Šæ”¾çš„ç©ºé—´ä¸å¯è®¿é—®
 
 		system("pause");
 
@@ -34,7 +34,7 @@ using namespace std;
 	}
 
 
-	//Àı2£ºÔÚ¶ÑÇøÓÃnew¿ª±ÙÊı×é
+	//ä¾‹2ï¼šåœ¨å †åŒºç”¨newå¼€è¾Ÿæ•°ç»„
 	/*int main() {
 
 		int* arr = new int[10];
@@ -48,7 +48,7 @@ using namespace std;
 		{
 			cout << arr[i] << endl;
 		}
-		//ÊÍ·ÅÊı×é delete ºó¼Ó [] ±íÊ¾ÊÍ·ÅµÄÊÇÊı×é
+		//é‡Šæ”¾æ•°ç»„ delete ååŠ  [] è¡¨ç¤ºé‡Šæ”¾çš„æ˜¯æ•°ç»„
 		delete[] arr;
 
 		system("pause");
