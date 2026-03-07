@@ -35,7 +35,7 @@ using namespace std;
 
 
 	//例2：在堆区用new开辟数组
-	int main() {
+	/*int main() {
 
 		int* arr = new int[10];
 
@@ -55,5 +55,8 @@ using namespace std;
 		
 		return 0;
 	}
+	*/
+
+
 
 	
