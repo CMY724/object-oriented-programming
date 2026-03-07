@@ -15,7 +15,7 @@ int main()
 	cout << *a << endl;
 
 
-
+	system("pause");
 
 
 	return 0;
