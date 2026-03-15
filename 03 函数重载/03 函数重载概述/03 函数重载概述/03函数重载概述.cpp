@@ -51,6 +51,6 @@ int main() {
 	func(3.14, 10);
 
 	system("pause");
-
+	
 	return 0;
 }
