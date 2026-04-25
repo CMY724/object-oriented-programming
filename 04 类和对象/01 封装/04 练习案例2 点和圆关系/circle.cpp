@@ -1,27 +1,27 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Circle.h"
-//Circle:: ×÷ÓÃÓò½âÎö·û ËµÃ÷Õâ¸öº¯ÊıÊÇCircleÀàµÄ³ÉÔ±º¯Êı
-//Ô²Àà
+//Circle:: ä½œç”¨åŸŸè§£æç¬¦ è¯´æ˜è¿™ä¸ªå‡½æ•°æ˜¯Circleç±»çš„æˆå‘˜å‡½æ•°
+//åœ†ç±»
 
 
-//ÉèÖÃ°ë¾¶
+//è®¾ç½®åŠå¾„
 void Circle::setR(int r)
 {
 	m_R = r;
 }
-//»ñÈ¡°ë¾¶
+//è·å–åŠå¾„
 int Circle::getR()
 {
 	return m_R;
 }
-//ÉèÖÃÔ²ĞÄ
+//è®¾ç½®åœ†å¿ƒ
 void Circle::setCenter(Point center)
 {
 	m_Center = center;
 }
-//»ñÈ¡Ô²ĞÄ
+//è·å–åœ†å¿ƒ
 Point Circle::getCenter()
 {
 	return m_Center;
-}//ÔÚÀàÖĞ ¿ÉÒÔÈÃÁíÍâÒ»¸öÀà×÷Îª±¾Àà³ÉÔ±
+}//åœ¨ç±»ä¸­ å¯ä»¥è®©å¦å¤–ä¸€ä¸ªç±»ä½œä¸ºæœ¬ç±»æˆå‘˜
 
