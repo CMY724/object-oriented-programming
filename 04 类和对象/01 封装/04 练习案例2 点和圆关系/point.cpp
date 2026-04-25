@@ -1,26 +1,26 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Point.h"
-//Point:: 作用域解析符 说明这个函数是Point类的成员函数
+//Point:: 浣滅敤鍩熻В鏋愮 璇存槑杩欎釜鍑芥暟鏄疨oint绫荤殑鎴愬憳鍑芥暟
 
 
-//点类
+//鐐圭被
 
-//设置x坐标
+//璁剧疆x鍧愭爣
 void Point::setX(int x)
 {
 	m_X = x;
 }
-//获取x坐标
+//鑾峰彇x鍧愭爣
 int Point::getX()
 {
 	return m_X;
 }
-//设置y坐标
+//璁剧疆y鍧愭爣
 void Point::setY(int y)
 {
 	m_Y = y;
 }
-//获取y坐标
+//鑾峰彇y鍧愭爣
 int Point::getY()
 {
 	return m_Y;

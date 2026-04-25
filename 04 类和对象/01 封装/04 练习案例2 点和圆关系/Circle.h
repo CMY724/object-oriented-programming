@@ -4,24 +4,24 @@
 using namespace std;
 
 
-//Ô²Àà
+//åœ†ç±»
 class Circle
 {
 public:
-	//ÉèÖÃ°ë¾¶
+	//è®¾ç½®åŠå¾„
 	void setR(int r);
 	
-	//»ñÈ¡°ë¾¶
+	//è·å–åŠå¾„
 	int getR();
 	
-	//ÉèÖÃÔ²ĞÄ
+	//è®¾ç½®åœ†å¿ƒ
 	void setCenter(Point center);
 	
-	//»ñÈ¡Ô²ĞÄ
+	//è·å–åœ†å¿ƒ
 	Point getCenter();
 	
 private:
-	int m_R;//°ë¾¶
+	int m_R;//åŠå¾„
 
-	Point m_Center;//Ô²ĞÄ ×Ô¼º¶¨ÒåÒ»¸öµãÀà
+	Point m_Center;//åœ†å¿ƒ è‡ªå·±å®šä¹‰ä¸€ä¸ªç‚¹ç±»
 };

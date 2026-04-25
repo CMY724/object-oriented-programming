@@ -4,34 +4,34 @@
 #include "Circle.h"
 #include "Point.h"
 using namespace std;
-//µãºÍÔ²¹ØÏµ
+//ç‚¹å’Œåœ†å…³ç³»
 
-//ºËĞÄÄÚÈİ:
-//1.ÔÚÀàÖĞ ¿ÉÒÔÈÃÁíÍâÒ»¸öÀà×÷Îª±¾Àà³ÉÔ± ¼´ÔÚCircleÖĞ°üº¬Point
-//2.°ÑµãÀàºÍÔ²Àà·Ö¿ªĞ´ ÈÃ´úÂë¸üÇåÎú  ·ÖÎÄ¼ş±àĞ´
+//æ ¸å¿ƒå†…å®¹:
+//1.åœ¨ç±»ä¸­ å¯ä»¥è®©å¦å¤–ä¸€ä¸ªç±»ä½œä¸ºæœ¬ç±»æˆå‘˜ å³åœ¨Circleä¸­åŒ…å«Point
+//2.æŠŠç‚¹ç±»å’Œåœ†ç±»åˆ†å¼€å†™ è®©ä»£ç æ›´æ¸…æ™°  åˆ†æ–‡ä»¶ç¼–å†™
 
 
 
-////µãÀà
+////ç‚¹ç±»
 //class Point
 //{
 //public:
-//	//ÉèÖÃx×ø±ê
+//	//è®¾ç½®xåæ ‡
 //	void setX(int x)
 //	{
 //		m_X = x;
 //	}
-//	//»ñÈ¡x×ø±ê
+//	//è·å–xåæ ‡
 //	int getX()
 //	{
 //		return m_X;
 //	}
-//	//ÉèÖÃy×ø±ê
+//	//è®¾ç½®yåæ ‡
 //	void setY(int y)
 //	{
 //		m_Y = y;
 //	}
-//	//»ñÈ¡y×ø±ê
+//	//è·å–yåæ ‡
 //	int getY()
 //	{
 //		return m_Y;
@@ -41,62 +41,62 @@ using namespace std;
 //	int m_Y;
 //};
 
-////Ô²Àà
+////åœ†ç±»
 //class Circle
 //{
 //public:
-//	//ÉèÖÃ°ë¾¶
+//	//è®¾ç½®åŠå¾„
 //	void setR(int r)
 //	{
 //		m_R = r;
 //	}
-//	//»ñÈ¡°ë¾¶
+//	//è·å–åŠå¾„
 //	int getR()
 //	{
 //		return m_R;
 //	}
-//	//ÉèÖÃÔ²ĞÄ
+//	//è®¾ç½®åœ†å¿ƒ
 //	void setCenter(Point center)
 //	{
 //		m_Center = center;
 //	}
-//	//»ñÈ¡Ô²ĞÄ
+//	//è·å–åœ†å¿ƒ
 //	Point getCenter()
 //	{
 //		return m_Center;
-//	}//ÔÚÀàÖĞ ¿ÉÒÔÈÃÁíÍâÒ»¸öÀà×÷Îª±¾Àà³ÉÔ±
+//	}//åœ¨ç±»ä¸­ å¯ä»¥è®©å¦å¤–ä¸€ä¸ªç±»ä½œä¸ºæœ¬ç±»æˆå‘˜
 //private:
-//	int m_R;//°ë¾¶
+//	int m_R;//åŠå¾„
 //
-//	Point m_Center;//Ô²ĞÄ ×Ô¼º¶¨ÒåÒ»¸öµãÀà
+//	Point m_Center;//åœ†å¿ƒ è‡ªå·±å®šä¹‰ä¸€ä¸ªç‚¹ç±»
 //};
 
 
-//ÅĞ¶ÏµãºÍÔ²µÄ¹ØÏµ
+//åˆ¤æ–­ç‚¹å’Œåœ†çš„å…³ç³»
 void isInCircle(Circle& c, Point& p)
 {
-	//¼ÆËãµãµ½Ô²ĞÄµÄ¾àÀëµÄÆ½·½
+	//è®¡ç®—ç‚¹åˆ°åœ†å¿ƒçš„è·ç¦»çš„å¹³æ–¹
 	int distance = (c.getCenter().getX() - p.getX()) * (c.getCenter().getX() - p.getX()) + (c.getCenter().getY() - p.getY()) * (c.getCenter().getY() - p.getY());
-	//¼ÆËã°ë¾¶µÄÆ½·½
+	//è®¡ç®—åŠå¾„çš„å¹³æ–¹
 	int r =c.getR() * c.getR();
 
-	//ÅĞ¶Ï
+	//åˆ¤æ–­
 	if (distance == r)
 	{
-		cout << "µãÔÚÔ²ÉÏ" << endl;
+		cout << "ç‚¹åœ¨åœ†ä¸Š" << endl;
 	}
 	else if (distance > r)
 	{
-		cout << "µãÔÚÔ²Íâ" << endl;
+		cout << "ç‚¹åœ¨åœ†å¤–" << endl;
 	}
 	else
 	{
-		cout << "µãÔÚÔ²ÄÚ" << endl;
+		cout << "ç‚¹åœ¨åœ†å†…" << endl;
 	}
 }
 int main()
 {
-	//´´½¨Ô²¶ÔÏó
+	//åˆ›å»ºåœ†å¯¹è±¡
 	Circle c;
 	c.setR(10);
 
@@ -105,12 +105,12 @@ int main()
 	center.setY(0);
 	c.setCenter(center);
 
-	//´´½¨µã¶ÔÏó
+	//åˆ›å»ºç‚¹å¯¹è±¡
 	Point p;
 	p.setX(10);
 	p.setY(9);
 
-	//ÅĞ¶Ï
+	//åˆ¤æ–­
 	isInCircle(c, p);
 
 	return 0;
