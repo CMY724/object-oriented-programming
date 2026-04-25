@@ -2,6 +2,7 @@
 #include "Point.h"
 //Point:: 作用域解析符 说明这个函数是Point类的成员函数
 
+
 //点类
 
 //设置x坐标

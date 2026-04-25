@@ -3,6 +3,7 @@
 #include "Point.h"
 using namespace std;
 
+
 //‘≤¿‡
 class Circle
 {

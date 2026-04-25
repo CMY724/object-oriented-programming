@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 //在头文件中 只能有类的声明 不能有类的实现
 //行为和属性的声明
 
