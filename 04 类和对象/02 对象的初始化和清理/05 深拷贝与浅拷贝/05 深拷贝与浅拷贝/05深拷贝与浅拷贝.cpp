@@ -12,10 +12,10 @@ public:
 		cout << "Person的默认构造函数调用" << endl;
 	}
 
-	Person(int age,int height)
+	Person(int age, int height)
 	{
 		m_Age = age;
-		m_Height = new int (height);//数据开辟在堆区
+		m_Height = new int(height);//数据开辟在堆区
 		cout << "Person的有参构造函数调用" << endl;
 	}
 
@@ -31,7 +31,7 @@ public:
 
 
 	}
-	
+
 	~Person()
 	{
 		//析构代码，将堆区开辟的数据进行释放操作
@@ -50,7 +50,7 @@ public:
 
 void test01()
 {
-	Person p1(18,160);
+	Person p1(18, 160);
 
 	cout << "p1的年龄为：" << p1.m_Age << "身高为： " << *p1.m_Height << endl;
 
@@ -71,6 +71,7 @@ int main()
 
 	return 0;
 }
+
 
 //总结
 //浅拷贝会把对象里的普通成员变量直接复制一份
