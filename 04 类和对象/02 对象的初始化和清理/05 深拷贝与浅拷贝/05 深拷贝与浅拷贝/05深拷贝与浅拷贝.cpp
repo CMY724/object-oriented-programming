@@ -34,7 +34,7 @@ public:
 
 	~Person()
 	{
-		//析构代码，将堆区开辟的数据进行释放操作
+		//析构函数作用，将堆区开辟的数据进行释放操作
 		if (m_Height != NULL)
 		{
 			delete m_Height;
