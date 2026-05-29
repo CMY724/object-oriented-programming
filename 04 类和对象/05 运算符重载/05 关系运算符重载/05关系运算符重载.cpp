@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-//ÖØÔØ¹ØÏµÔËËã·û
+//é‡è½½å…³ç³»è¿ç®—ç¬¦
 
 class Person
 {
@@ -14,7 +14,7 @@ public:
 	}
 
 
-	//ÖØÔØ==ºÅ
+	//é‡è½½==å·
 
 	bool operator==(Person& p)
 	{
@@ -25,7 +25,7 @@ public:
 		return false;
 	}
 
-	//ÖØÔØ!=ºÅ
+	//é‡è½½!=å·
 	bool operator!=(Person& p)
 	{
 		if (this->m_Name == p.m_Name && this->m_Age == p.m_Age)
@@ -46,19 +46,19 @@ void test01()
 
 	Person p2("Jerry", 18);
 
-	if (p1 == p2)//Ïàµ±ÓÚp1.operator==(p2) ÒÔ´Ë¿ÉÒÔÅĞ¶ÏÖØÔØÊÇ·ñÒª²ÎÊıºÍ·µ»ØÖµ
+	if (p1 == p2)//ç›¸å½“äºp1.operator==(p2) ä»¥æ­¤å¯ä»¥åˆ¤æ–­é‡è½½æ˜¯å¦è¦å‚æ•°å’Œè¿”å›å€¼
 	{
-		cout << "p1ºÍp2ÊÇÏàµÈµÄ" << endl;
+		cout << "p1å’Œp2æ˜¯ç›¸ç­‰çš„" << endl;
 	}
 	else
-		cout << "p1ºÍp2ÊÇ²»ÏàµÈµÄ" << endl;
+		cout << "p1å’Œp2æ˜¯ä¸ç›¸ç­‰çš„" << endl;
 
 	if (p1 != p2)
 	{
-		cout << "p1ºÍp2ÊÇ²»ÏàµÈµÄ" << endl;
+		cout << "p1å’Œp2æ˜¯ä¸ç›¸ç­‰çš„" << endl;
 	}
 	else
-		cout << "p1ºÍp2ÊÇÏàµÈµÄ" << endl;
+		cout << "p1å’Œp2æ˜¯ç›¸ç­‰çš„" << endl;
 }
 
 int main()
