@@ -2,7 +2,8 @@
 #include <iostream>
 using namespace std;
 
-// 继承中的对象模型
+
+//继承中的对象模型
 
 class Base
 {
@@ -23,6 +24,7 @@ public:
 	int m_D;
 
 };
+
 
 //利用开发人员命令提示工具查看对象模型
 //跳转盘符 F:
