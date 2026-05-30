@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-//继承中的对象模型
+//缁ф壙涓殑瀵硅薄妯″瀷
 
 class Base
 {
