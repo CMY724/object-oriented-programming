@@ -3,10 +3,10 @@
 #include <string>
 using namespace std;
 
-//·Ö±ğÀûÓÃÆÕÍ¨Ğ´·¨ºÍ¶àÌ¬¼¼ÊõÊµÏÖ¼ÆËãÆ÷Àà
+//åˆ†åˆ«åˆ©ç”¨æ™®é€šå†™æ³•å’Œå¤šæ€æŠ€æœ¯å®ç°è®¡ç®—å™¨ç±»
 
 
-//ÆÕÍ¨Ğ´·¨
+//æ™®é€šå†™æ³•
 class Calculator
 {
 public:
@@ -25,18 +25,18 @@ public:
 		{
 			return m_Num1 * m_Num2;
 		}
-		//Èç¹ûÏëÀ©Õ¹ĞÂµÄ¹¦ÄÜ ĞèÒªĞŞ¸ÄÔ´Âë
-		//ÔÚÕæÊµµÄ¿ª·¢ÖĞ Ìá³« ¿ª±ÕÔ­Ôò ¶ÔÀ©Õ¹¿ª·Å ¶ÔĞŞ¸Ä¹Ø±Õ
+		//å¦‚æœæƒ³æ‰©å±•æ–°çš„åŠŸèƒ½ éœ€è¦ä¿®æ”¹æºç 
+		//åœ¨çœŸå®çš„å¼€å‘ä¸­ æå€¡ å¼€é—­åŸåˆ™ å¯¹æ‰©å±•å¼€æ”¾ å¯¹ä¿®æ”¹å…³é—­
 
 	}
 
-	int m_Num1;//²Ù×÷Êı1
-	int m_Num2;//²Ù×÷Êı2
+	int m_Num1;//æ“ä½œæ•°1
+	int m_Num2;//æ“ä½œæ•°2
 };
 
 void test01()
 {
-	//´´½¨¼ÆËãÆ÷¶ÔÏó
+	//åˆ›å»ºè®¡ç®—å™¨å¯¹è±¡
 	Calculator c;
 	c.m_Num1 = 10;
 	c.m_Num2 = 10;
@@ -48,14 +48,14 @@ void test01()
 
 
 
-//ÀûÓÃ¶àÌ¬ÊµÏÖ¼ÆËãÆ÷
-//¶àÌ¬ºÃ´¦:
-//1.×éÖ¯½á¹¹ÇåÎú
-//2.¿É¶ÁĞÔÇ¿
-//3.¶ÔÓÚÇ°ÆÚºÍºóÆÚµÄÀ©Õ¹ÒÔ¼°Î¬»¤ĞÔ¸ß
+//åˆ©ç”¨å¤šæ€å®ç°è®¡ç®—å™¨
+//å¤šæ€å¥½å¤„:
+//1.ç»„ç»‡ç»“æ„æ¸…æ™°
+//2.å¯è¯»æ€§å¼º
+//3.å¯¹äºå‰æœŸå’ŒåæœŸçš„æ‰©å±•ä»¥åŠç»´æŠ¤æ€§é«˜
 
 
-//ÊµÏÖ¼ÆËãÆ÷µÄ³éÏóÀà
+//å®ç°è®¡ç®—å™¨çš„æŠ½è±¡ç±»
 class AbstractCalculator
 {
 public:
@@ -71,7 +71,7 @@ public:
 
 };
 
-//¼Ó·¨¼ÆËãÆ÷Àà
+//åŠ æ³•è®¡ç®—å™¨ç±»
 class AddCalculator :public AbstractCalculator
 {
 	virtual int getResult()
@@ -81,7 +81,7 @@ class AddCalculator :public AbstractCalculator
 };
 
 
-//¼õ·¨¼ÆËãÆ÷Àà
+//å‡æ³•è®¡ç®—å™¨ç±»
 class SubCalculator :public AbstractCalculator
 {
 	virtual int getResult()
@@ -91,7 +91,7 @@ class SubCalculator :public AbstractCalculator
 };
 
 
-//³Ë·¨¼ÆËãÆ÷Àà
+//ä¹˜æ³•è®¡ç®—å™¨ç±»
 class MulCalculator :public AbstractCalculator
 {
 	virtual int getResult()
@@ -102,10 +102,10 @@ class MulCalculator :public AbstractCalculator
 
 void test02()
 {
-	//¶àÌ¬Ê¹ÓÃÌõ¼ş
-	//¸¸ÀàÖ¸Õë»òÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+	//å¤šæ€ä½¿ç”¨æ¡ä»¶
+	//çˆ¶ç±»æŒ‡é’ˆæˆ–å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
 
-	//¼Ó·¨
+	//åŠ æ³•
 	AbstractCalculator* abc = new AddCalculator;
 	abc->m_Num1 = 100;
 	abc->m_Num2 = 100;
@@ -113,10 +113,10 @@ void test02()
 	cout << abc->m_Num1 << "+" << abc->m_Num2 << "=" << abc->getResult() << endl;
 
 
-	//ÓÃÍêºó¼ÇµÃÏú»Ù
-	delete abc;//ÊÍ·ÅµÄÊÇÖ¸ÕëÖ¸ÏòµÄÄÚ´æ Ö¸Õë±¾Éí»¹´æÔÚ
+	//ç”¨å®Œåè®°å¾—é”€æ¯
+	delete abc;//é‡Šæ”¾çš„æ˜¯æŒ‡é’ˆæŒ‡å‘çš„å†…å­˜ æŒ‡é’ˆæœ¬èº«è¿˜å­˜åœ¨
 
-	//¼õ·¨ÔËËã
+	//å‡æ³•è¿ç®—
 	abc = new SubCalculator;
 	abc->m_Num1 = 100;
 	abc->m_Num2 = 100;
@@ -124,7 +124,7 @@ void test02()
 
 	delete abc;
 
-	//³Ë·¨ÔËËã
+	//ä¹˜æ³•è¿ç®—
 	abc = new MulCalculator;
 	abc->m_Num1 = 100;
 	abc->m_Num2 = 100;
