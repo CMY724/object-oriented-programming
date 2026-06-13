@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-//¶à¼Ì³ĞÓï·¨
+//å¤šç»§æ‰¿è¯­æ³•
 
 class Base1
 {
@@ -28,8 +28,8 @@ public:
 	int m_A;
 };
 
-//×ÓÀà  ĞèÒª¼Ì³ĞBase1ºÍBase2
-//Óï·¨ class ×ÓÀà:¼Ì³Ğ·½Ê½ ¸¸Àà1, ¼Ì³Ğ·½Ê½ ¸¸Àà2 ....	
+//å­ç±»  éœ€è¦ç»§æ‰¿Base1å’ŒBase2
+//è¯­æ³• class å­ç±»:ç»§æ‰¿æ–¹å¼ çˆ¶ç±»1, ç»§æ‰¿æ–¹å¼ çˆ¶ç±»2 ....	
 class Son :public Base1, public Base2
 {
 public:
@@ -52,7 +52,7 @@ void test01()
 
 	cout << "sizeof Son= " << sizeof(s) << endl;
 
-	//cout << "m_A= " << s.m_A << endl; Base1 Base2¶¼ÓĞm_A ³öÏÖ¶şÒåĞÔ´íÎó ĞèÒª¼Ó×÷ÓÃÓòÇø·Ö
+	//cout << "m_A= " << s.m_A << endl; Base1 Base2éƒ½æœ‰m_A å‡ºç°äºŒä¹‰æ€§é”™è¯¯ éœ€è¦åŠ ä½œç”¨åŸŸåŒºåˆ†
 	cout << "Base1::m_A= " << s.Base1::m_A << endl;
 	cout << "Base2::m_A= " << s.Base2::m_A << endl;
 }
