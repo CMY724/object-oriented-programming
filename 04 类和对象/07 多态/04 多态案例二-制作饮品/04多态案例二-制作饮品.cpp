@@ -2,23 +2,23 @@
 #include <iostream>
 using namespace std;
 
-//¶àÌ¬°¸Àı2 ÖÆ×÷ÒûÆ·
+//å¤šæ€æ¡ˆä¾‹2 åˆ¶ä½œé¥®å“
 class AbstractDrinking
 {
 public:
-	//ÖóË®
+	//ç…®æ°´
 	virtual void Boil() = 0;
 	
-	//³åÅİ
+	//å†²æ³¡
 	virtual void Brew() = 0;
 
-	//µ¹Èë±­ÖĞ
+	//å€’å…¥æ¯ä¸­
 	virtual void PourInCup() = 0;
 
-	//¼ÓÈë¸¨ÁÏ
+	//åŠ å…¥è¾…æ–™
 	virtual void PutSomething() = 0;
 
-	//ÖÆ×÷ÒûÆ·
+	//åˆ¶ä½œé¥®å“
 	void MakeDrink()
 	{
 		Boil();
@@ -29,67 +29,67 @@ public:
 	}
 };
 
-//ÖÆ×÷¿§·È
+//åˆ¶ä½œå’–å•¡
 class Coffee :public AbstractDrinking
 {
 public:
-	//ÖóË®
+	//ç…®æ°´
 	virtual void Boil()
 	{
-		cout << "ÖóË®" << endl;
+		cout << "ç…®æ°´" << endl;
 	}
 
-	//³åÅİ
+	//å†²æ³¡
 	virtual void Brew()
 	{
-		cout << "³åÅİ¿§·È" << endl;
+		cout << "å†²æ³¡å’–å•¡" << endl;
 	}
 
-	//µ¹Èë±­ÖĞ
+	//å€’å…¥æ¯ä¸­
 	virtual void PourInCup()
 	{
-		cout << "µ¹Èë±­ÖĞ" << endl;
+		cout << "å€’å…¥æ¯ä¸­" << endl;
 	}
 
-	//¼ÓÈë¸¨ÁÏ
+	//åŠ å…¥è¾…æ–™
 	virtual void PutSomething()
 	{
-		cout << "¼ÓÈëÅ£ÄÌºÍÌÇ" << endl;
+		cout << "åŠ å…¥ç‰›å¥¶å’Œç³–" << endl;
 	}
 	
 };
 
-//ÖÆ×÷²èÒ¶
+//åˆ¶ä½œèŒ¶å¶
 class Tea :public AbstractDrinking
 {
 public:
-	//ÖóË®
+	//ç…®æ°´
 	virtual void Boil()
 	{
-		cout << "ÖóË®" << endl;
+		cout << "ç…®æ°´" << endl;
 	}
 
-	//³åÅİ
+	//å†²æ³¡
 	virtual void Brew()
 	{
-		cout << "³åÅİ²èÒ¶" << endl;
+		cout << "å†²æ³¡èŒ¶å¶" << endl;
 	}
 
-	//µ¹Èë±­ÖĞ
+	//å€’å…¥æ¯ä¸­
 	virtual void PourInCup()
 	{
-		cout << "µ¹Èë±­ÖĞ" << endl;
+		cout << "å€’å…¥æ¯ä¸­" << endl;
 	}
 
-	//¼ÓÈë¸¨ÁÏ
+	//åŠ å…¥è¾…æ–™
 	virtual void PutSomething()
 	{
-		cout << "¼ÓÈëèÛè½" << endl;
+		cout << "åŠ å…¥æ¸æ" << endl;
 	}
 
 };
 
-//ÖÆ×÷ÒûÆ·
+//åˆ¶ä½œé¥®å“
 void doWork(AbstractDrinking* abs) //AbstractDrinking* abs=new Coffee;
 {
 	abs->MakeDrink();
@@ -98,12 +98,12 @@ void doWork(AbstractDrinking* abs) //AbstractDrinking* abs=new Coffee;
 
 void test01()
 {
-	//ÖÆ×÷¿§·È
+	//åˆ¶ä½œå’–å•¡
 	doWork(new Coffee);
 
 	cout << "-----------------" << endl;
 
-	//ÖÆ×÷²èÒ¶
+	//åˆ¶ä½œèŒ¶å¶
 	doWork(new Tea);
 }
 
