@@ -2,13 +2,13 @@
 #include <iostream>
 using namespace std;
 
-//ÊµÏÖÍ¨ÓÃ ¶ÔÊı×é½øĞĞÅÅĞòµÄº¯Êı
-//´Ó´óµ½Ğ¡
-//Ñ¡ÔñÅÅĞò
-//ÓÃ char int Êı×é ½øĞĞ²âÊÔ
+//å®ç°é€šç”¨ å¯¹æ•°ç»„è¿›è¡Œæ’åºçš„å‡½æ•°
+//ä»å¤§åˆ°å°
+//é€‰æ‹©æ’åº
+//ç”¨ char int æ•°ç»„ è¿›è¡Œæµ‹è¯•
 
 
-//½»»»º¯ÊıÄ£°æ
+//äº¤æ¢å‡½æ•°æ¨¡ç‰ˆ
 template <class T>
 void mySwap(T& a, T& b)
 {
@@ -18,32 +18,32 @@ void mySwap(T& a, T& b)
 }
 
 
-//ÅÅĞòËã·¨
+//æ’åºç®—æ³•
 template<class T>
 void mySort(T arr[], int len)
 {
 	for (int i = 0; i < len; i++)
 	{
-		int max = i;//ÈÏ¶¨×î´óÖµÏÂ±ê
+		int max = i;//è®¤å®šæœ€å¤§å€¼ä¸‹æ ‡
 
 		for (int j = i + 1; j < len; j++)
 		{
-			//ÈÏ¶¨µÄ×î´óÖµ±È±éÀú³öµÄÊıÖµÒªĞ¡ ËµÃ÷jÏÂ±êÔªËØ²ÅÊÇÕæÕı×î´óÖµ
+			//è®¤å®šçš„æœ€å¤§å€¼æ¯”éå†å‡ºçš„æ•°å€¼è¦å° è¯´æ˜jä¸‹æ ‡å…ƒç´ æ‰æ˜¯çœŸæ­£æœ€å¤§å€¼
 			if (arr[max] < arr[j])
 			{
-				max = j;//¸üĞÂ×î´óÖµÏÂ±ê
+				max = j;//æ›´æ–°æœ€å¤§å€¼ä¸‹æ ‡
 			}
 		}
 		if (max != i)
 		{
-			//½»»»maxºÍiÏÂ±êµÄÔªËØ
+			//äº¤æ¢maxå’Œiä¸‹æ ‡çš„å…ƒç´ 
 			mySwap(arr[max], arr[i]);
 		}
 
 	}
 }
 
-//´òÓ¡Êı×éÄ£°æ
+//æ‰“å°æ•°ç»„æ¨¡ç‰ˆ
 template <class T>
 void PrintArray(T arr[], int len)
 {
@@ -57,7 +57,7 @@ void PrintArray(T arr[], int len)
 
 void test01()
 {
-	//²âÊÔcharÊı×é
+	//æµ‹è¯•charæ•°ç»„
 	char charArr[] = "badcfe";  
 
 	int num = sizeof(charArr) / sizeof(char);
@@ -72,7 +72,7 @@ void test01()
 
 void test02()
 {
-	//²âÊÔintÊı×é
+	//æµ‹è¯•intæ•°ç»„
 
 	int intArr[] = { 7,5,1,3,9,2.4,6,8 };
 	
