@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-//ÀàÄ£°æ Óëº¯ÊıÄ£°æÓï·¨ÏàËÆ
+//ç±»æ¨¡ç‰ˆ ä¸å‡½æ•°æ¨¡ç‰ˆè¯­æ³•ç›¸ä¼¼
 template<class NameType,class AgeType>
 class Person
 {
@@ -23,12 +23,12 @@ public:
  	}
 
 	NameType m_Name;
-	AgeType m_Age;//Á½¸öÊı¾İÀàĞÍ²»Ò»Ñù ĞèÒªĞ´Á½¸öclass
+	AgeType m_Age;//ä¸¤ä¸ªæ•°æ®ç±»å‹ä¸ä¸€æ · éœ€è¦å†™ä¸¤ä¸ªclass
 };
 
 void test01()
 {
-	Person<string, int>p1("ËïÎò¿Õ", 999);//<> Ä£°æµÄ²ÎÊıÁĞ±í
+	Person<string, int>p1("å­™æ‚Ÿç©º", 999);//<> æ¨¡ç‰ˆçš„å‚æ•°åˆ—è¡¨
 
 	p1.showPerson();
 
