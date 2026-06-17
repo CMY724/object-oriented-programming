@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-//ÀàÄ£°æÖĞ³ÉÔ±º¯ÊıÀàÍâÊµÏÖ
+//ç±»æ¨¡ç‰ˆä¸­æˆå‘˜å‡½æ•°ç±»å¤–å®ç°
 template<class T1, class T2>
 class Person
 {
@@ -17,7 +17,7 @@ public:
 
 	void showPerson();
 	//{
-	//	cout << "ĞÕÃû: " << this->m_Name << "ÄêÁä: " << this->m_Age << endl;
+	//	cout << "å§“å: " << this->m_Name << "å¹´é¾„: " << this->m_Age << endl;
 	//}
 
 	T1 m_Name;
@@ -25,7 +25,7 @@ public:
 
 };
 
-//¹¹Ôìº¯ÊıµÄÀàÍâÊµÏÖ ÉùÃ÷Ä£°æ ×÷ÓÃÓò ÈÃ±àÒëÆ÷ÖªµÀT1 T2µ½µ×ÊÇÊ²Ã´
+//æ„é€ å‡½æ•°çš„ç±»å¤–å®ç° å£°æ˜æ¨¡ç‰ˆ ä½œç”¨åŸŸ è®©ç¼–è¯‘å™¨çŸ¥é“T1 T2åˆ°åº•æ˜¯ä»€ä¹ˆ
 template<class T1, class T2>
 Person<T1, T2>::Person(T1 name, T2 age)
 {
@@ -35,11 +35,11 @@ Person<T1, T2>::Person(T1 name, T2 age)
 
 }
 
-//³ÉÔ±º¯ÊıµÄÀàÍâÊµÏÖ
+//æˆå‘˜å‡½æ•°çš„ç±»å¤–å®ç°
 template<class T1, class T2>
 void Person<T1, T2>::showPerson()
 {
-	cout << "ĞÕÃû: " << this->m_Name << "ÄêÁä: " << this->m_Age << endl;
+	cout << "å§“å: " << this->m_Name << "å¹´é¾„: " << this->m_Age << endl;
 }
 
 void test01()
