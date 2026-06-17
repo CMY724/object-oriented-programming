@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-//ÀàÄ£°æµÄ¶ÔÏó×öº¯Êı²ÎÊı
+//ç±»æ¨¡ç‰ˆçš„å¯¹è±¡åšå‡½æ•°å‚æ•°
 
 template<class T1,class T2>
 class Person
@@ -18,14 +18,14 @@ public:
 
 	void showPerson()
 	{
-		cout << "ĞÕÃû: " << this->m_Name << "ÄêÁä: " << this->m_Age << endl;
+		cout << "å§“å: " << this->m_Name << "å¹´é¾„: " << this->m_Age << endl;
 	}
 
 	T1 m_Name;
 	T2 m_Age;
 };
 
-//1.Ö¸¶¨´«ÈëÀàĞÍ
+//1.æŒ‡å®šä¼ å…¥ç±»å‹
 
 void printPerson1(Person<string, int>& p)
 {
@@ -34,47 +34,47 @@ void printPerson1(Person<string, int>& p)
 
 void test01()
 {
-	Person<string, int>p("ËïÎò¿Õ", 100);
+	Person<string, int>p("å­™æ‚Ÿç©º", 100);
 	
 	printPerson1(p);
 	
 
 }
 
-//2.²ÎÊıÄ£°æ»¯
+//2.å‚æ•°æ¨¡ç‰ˆåŒ–
 template<class T1,class T2>
 void printPerson2(Person<T1, T2>& p)
 {
 	p.showPerson();
 
 
-	cout << "T1µÄÀàĞÍÎª: " << typeid(T1).name() << endl;
-	cout << "T2µÄÀàĞÍÎª: " << typeid(T2).name() << endl;
+	cout << "T1çš„ç±»å‹ä¸º: " << typeid(T1).name() << endl;
+	cout << "T2çš„ç±»å‹ä¸º: " << typeid(T2).name() << endl;
 
 
 }
 
 void test02()
 {
-	Person<string, int>p("Öí°Ë½ä", 90);
+	Person<string, int>p("çŒªå…«æˆ’", 90);
 
 	printPerson2(p);
 
 }
 
-//3.Õû¸öÀàÄ£°æ»¯
+//3.æ•´ä¸ªç±»æ¨¡ç‰ˆåŒ–
 template<class T>
 void printPerson3(T & p)
 {
 	p.showPerson();
 
-	cout << "TµÄÀàĞÍÎª: " << typeid(T).name() << endl;
+	cout << "Tçš„ç±»å‹ä¸º: " << typeid(T).name() << endl;
 }
 
 
 void test03()
 {
-	Person<string, int>p("ÌÆÉ®", 30);
+	Person<string, int>p("å”åƒ§", 30);
 	printPerson3(p);
 
 }
