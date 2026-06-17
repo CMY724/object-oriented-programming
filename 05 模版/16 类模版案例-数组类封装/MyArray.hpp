@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//×Ô¼ºµÄÍ¨ÓÃÊı×éÀà
+//è‡ªå·±çš„é€šç”¨æ•°ç»„ç±»
 #pragma once
 #include <iostream>
 using namespace std;
@@ -10,26 +10,26 @@ class MyArray
 public:
 
 
-	//ÓĞ²Î¹¹Ôì  ²ÎÊıÎªÈİÁ¿
+	//æœ‰å‚æ„é€   å‚æ•°ä¸ºå®¹é‡
 	MyArray(int capacity)
 	{
-		cout << "MyArrayÓĞ²Î¹¹Ôìµ÷ÓÃ" << endl;
+		cout << "MyArrayæœ‰å‚æ„é€ è°ƒç”¨" << endl;
 		this->m_Capacity = capacity;
 		this->m_Size = 0;
 		this->pAddress = new T[this->m_Capacity];
 	}
 
-	//¿½±´¹¹Ôì
+	//æ‹·è´æ„é€ 
 	MyArray(const MyArray& arr)
 	{
-		cout << "MyArray¿½±´¹¹Ôìµ÷ÓÃ" << endl;
+		cout << "MyArrayæ‹·è´æ„é€ è°ƒç”¨" << endl;
 		this->m_Capacity = arr.m_Capacity;
 		this->m_Size = arr.m_Size;
 		
-		//Éî¿½±´
+		//æ·±æ‹·è´
 		this->pAddress = new T[arr.m_Capacity];
 
-		//½«arrÖĞÊı¾İ¿½±´¹ıÀ´
+		//å°†arrä¸­æ•°æ®æ‹·è´è¿‡æ¥
 		for (int i = 0; i < this->m_Size; i++)
 		{
 			this->pAddress[i] = arr.pAddress[i];
@@ -37,11 +37,11 @@ public:
 
 	}
 
-	//operator= ·ÀÖ¹Ç³¿½±´ÎÊÌâ
+	//operator= é˜²æ­¢æµ…æ‹·è´é—®é¢˜
 	MyArray& operator=(const MyArray& arr)
 	{
-		cout << "MyArrayµÄoperator=µ÷ÓÃ" << endl;
-		//ÏÈÅĞ¶ÏÔ­À´¶ÑÇøÊÇ·ñÓĞÊı¾İ Èç¹ûÓĞ ÏÈÊÍ·Å
+		cout << "MyArrayçš„operator=è°ƒç”¨" << endl;
+		//å…ˆåˆ¤æ–­åŸæ¥å †åŒºæ˜¯å¦æœ‰æ•°æ® å¦‚æœæœ‰ å…ˆé‡Šæ”¾
 		if (this->pAddress != NULL)
 		{
 			delete[] this->pAddress;
@@ -50,7 +50,7 @@ public:
 			this->m_Size = 0;
 		}
 
-		//Éî¿½±´
+		//æ·±æ‹·è´
 		this->m_Capacity = arr.m_Capacity;
 		this->m_Size = arr.m_Size;
 		this->pAddress = new T[arr.m_Capacity];
@@ -64,22 +64,22 @@ public:
 	}
 
 
-	//Îö¹¹º¯Êı
+	//ææ„å‡½æ•°
 	~MyArray()
 	{
 		if (this->pAddress != NULL)
 		{
-			cout << "MyArrayÎö¹¹º¯Êıµ÷ÓÃ" << endl;
+			cout << "MyArrayææ„å‡½æ•°è°ƒç”¨" << endl;
 			delete[] this->pAddress;
 		}
 		this->pAddress = NULL;
 	}
 
 private:
-	T* pAddress;//Ö¸ÕëÖ¸Ïò¶ÑÇø¿ª±ÙµÄÕæÊµÊı×é
+	T* pAddress;//æŒ‡é’ˆæŒ‡å‘å †åŒºå¼€è¾Ÿçš„çœŸå®æ•°ç»„
 
-	int m_Capacity;//Êı×éÈİÁ¿
+	int m_Capacity;//æ•°ç»„å®¹é‡
 
-	int m_Size;//Êı×é´óĞ¡
+	int m_Size;//æ•°ç»„å¤§å°
 
 };
