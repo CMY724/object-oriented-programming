@@ -4,42 +4,42 @@
 #include <string>
 using namespace std;
 
-//нд╠╬нд╪Ч ╤анд╪Ч
+//Ф√┤Ф°╛Ф√┤Д╩╤ Х╞╩Ф√┤Д╩╤
 
 void test01()
 {
-	//1.╟Э╨╛м╥нд╪Ч
+	//1.Е▄┘Е░╚Е╓╢Ф√┤Д╩╤
 
-	//2.╢╢╫╗аВ╤тоС
+	//2.Е┬⌡Е╩╨Ф╣│Е╞╧Х╠║
 	ifstream ifs;
 
-	//3.╢Р©╙нд╪Ч ╡╒греп╤ойг╥Я╢Р©╙Ёи╧╕
+	//3.Ф┴⌠Е╪─Ф√┤Д╩╤ Е╧╤Д╦■Е┬╓Ф√╜Ф≤╞Е░╕Ф┴⌠Е╪─Ф┬░Е┼÷
 
 	ifs.open("test.txt", ios::in);
 
 	if (!ifs.is_open())
 	{
-		cout << "нд╪Ч╢Р©╙й╖╟эак" << endl;
+		cout << "Ф√┤Д╩╤Ф┴⌠Е╪─Е╓╠Х╢╔Д╨├" << endl;
 		return;
 	}
 
-	//4.╤айЩ╬щ
+	//4.Х╞╩Ф∙╟Ф█╝
 
-	//╣зр╩жж
+	//Г╛╛Д╦─Г╖█
 	/*char buf[1024] = { 0 };
 	while (ifs >> buf)
 	{
 		cout << buf << endl;
 	}*/
 
-	//╣з╤Чжж
+	//Г╛╛Д╨▄Г╖█
 	/*char buf[1024] = { 0 };
 	while (ifs.getline(buf, sizeof(buf)))
 	{
 		cout << buf << endl;
 	}*/
 
-	//╣зхЩжж
+	//Г╛╛Д╦┴Г╖█
 	/*string buf;
 
 	while (getline(ifs, buf))
@@ -47,15 +47,15 @@ void test01()
 		cout << buf << endl;
 	}*/
 
-	//╣зкджж
+	//Г╛╛Е⌡⌡Г╖█
 	char c;
-	while ((c = ifs.get()) != EOF) //EOFйг end of file
+	while ((c = ifs.get()) != EOF) //EOFФ≤╞ end of file
 	{
 		cout << c;
 	}
 
 
-	//5.╧ь╠унд╪Ч
+	//5.Е┘ЁИ≈╜Ф√┤Д╩╤
 	ifs.close();
 }
 
@@ -66,4 +66,4 @@ int main()
 	return 0;
 }
 
-//юШсцis_open©иртеп╤онд╪Чйг╥Я╢Р©╙Ёи╧╕
+//Е┬╘Г■╗is_openЕ▐╞Д╩╔Е┬╓Ф√╜Ф√┤Д╩╤Ф≤╞Е░╕Ф┴⌠Е╪─Ф┬░Е┼÷
